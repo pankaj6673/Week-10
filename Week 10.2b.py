@@ -1,26 +1,7 @@
-class CashRegister :
-   
-   def __init__(self) :
-      self._itemCount = 0
-      self._totalPrice = 0.0
-      
-   
-   def addItem(self, price) :
-      self._itemCount = self._itemCount + 1
-      self._totalPrice = self._totalPrice + price 
-      
-   
-   def getTotal(self) :
-      return self._totalPrice
-
-   def getCount(self) :
-      return self._itemCount
-
-   def giveChange(self,totalCash) :
-        return (totalCash-self.getTotal())
+from CashRegister2 import *
 
 def main():
-    x=CashRegister()
+    x=CashRegister2()
     price=None
     while price !="0":
         price=input("Enter the item price or type '0' to finish the list: ")
